@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
+import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'standalone', // Ensures compatibility with Vercel
+  reactStrictMode: true, // Optional, enables strict mode for React
+  // Add other configurations if needed
 };
 
 export default nextConfig;
